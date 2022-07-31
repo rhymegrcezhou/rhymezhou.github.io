@@ -1,0 +1,51 @@
+body{
+    padding-bottom: 20px;
+}
+.table-div{
+    margin-left: 30px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.lostcard-tbl{
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 1em;
+    min-width: 800px;
+    border-radius: 5px 5px 0 0 ;
+    overflow: hidden;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.15);
+}
+.lostcard-tbl thead tr{
+    background-color: rgb(38, 69, 59);
+    color: aliceblue;
+    text-align: left;
+    font-weight: bold;
+}
+.lostcard-tbl th,
+.lostcard-tbl td{
+    padding: 12px 15px;
+}
+.lostcard-tbl tbody tr{
+    border-bottom: 1px solid white;
+}
+.lostcard-tbl tbody tr:nth-of-type(even){
+    background-color: rgb(211, 211, 211);
+}
+.lostcard-tbl tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(38,69,59);
+}
+.lostcard-tbl tbody tr:hover{
+    font-weight: bold;
+    color: darkgreen;
+}
+.error-container{
+    margin-left: 10px;
+}
+.error-msg{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
