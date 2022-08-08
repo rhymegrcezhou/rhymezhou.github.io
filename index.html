@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Taviraj&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="eg.css" />
+    <link rel="stylesheet" href="../static/css/eg.css" />
 
     <title>Rhyme Zhou</title>
     <style>
@@ -81,7 +81,7 @@
         <div class="head-container">
           <div class="header-top">
             <div class="img-cropper">
-              <img id="me" src="portrait1.jpg" alt="Me">
+              <img id="me" src="../static/pics/portrait1.jpg" alt="Me">
             </div>
             <p id="intro-lg">
               <span style="font-weight: 600">coder & writer</span><br>passionate about <span class="underline--magical">finding solutions</span><br> & <span class="underline--magical">building products</span> <br>for <i>humans behind data</i>
@@ -97,7 +97,7 @@
       </div>
     </div>
     <!--Projects-->
-    <section id="projects">
+    <section id="projects">        
       <div class="section-heading">
         <h3 class="pageName">🛠️ Projects 🛠️</h3>
       </div>
@@ -111,36 +111,43 @@
       </div>
       <div class="exp-grid">
         <div class="filterDiv">
+          <div class="badges"  align="left">
+            <span class="badge badge-pill badge-secondary">HTML/CSS/Bootstrap</span>
+            <span class="badge badge-pill badge-warning">Python</span>
+            <span class="badge badge-pill badge-info">SQL (MS SQL Server)</span>
+          </div>
           <div class="card-text">
-            <img src="c1.jpg" style="width: 100%; ">
-            <h5><p><b>Web Developer & Data Consultant</b> | Wright's Resumes and Connections</p></h5>
+            <img class="img2" src="../static/pics/c1.jpg" style="width: 100%;">
+            <h5><p><b>Data Analyst Summer Intern</b> | Wright's Resumes and Connections</p></h5>
             <p class="card-description">
               With
               <a href="https://www.linkedin.com/company/wrac" target="_blank" class="wrac-links"><span style="color:darkred;"><strong>WRAC</strong></span></a>, I've conducted user research and data analysis by interacting with 20 WRAC clients, from low-income individuals striving for higher level employment to veterans to those who were formally incarcerated. 
               <br><br>I built WRAC's blog web page and while working with UCD experts,  I synthesized 30 UX interviews and analyzed 200 customer discovery survey responses using Python pandas.
             </p>
-            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
-            <span class="badge badge-pill badge-warning">Python</span>
-            <span class="badge badge-pill badge-info">MS SQL Server</span>
           </div>
         </div>
         <div class="filterDiv">
+          <div class="badges" align="left">
+            <span class="badge badge-pill badge-info">HTML/CSS/Bootstrap</span>
+            <span class="badge badge-pill badge-warning">Python/Flask/RESTFUL API</span>
+            <span class="badge badge-pill badge-secondary">SQL (MS SQL Server)</span>
+            <span class="badge badge-pill badge-success">jQuery/JavaScript</span>
+          </div>
           <div class="card-text">
-            <img src="c1.jpg"  style="width: 100%; ">
-            <h5><p><b>Web Developer & Data Consultant</b> | Wright's Resumes and Connections</p></h5>
+            <a href="https://github.com/yifanrhymezhou/MRPMS-FAHZU" target="_blank"><img class="img2" src="../static/pics/1.png"  style="width: 100%; "></a>
+            <h5><p><b>Web Based Archived Medical Research Record Management System Intern</b> | First Affiliated Hospital of ZJU</p></h5>
             <p class="card-description">
-              With
-              <a href="https://www.linkedin.com/company/wrac" target="_blank" class="wrac-links"><span style="color:darkred;"><strong>WRAC</strong></span></a>, I've conducted user research and data analysis by interacting with 20 WRAC clients, from low-income individuals striving for higher level employment to veterans to those who were formally incarcerated. 
-              <br><br>I built WRAC's blog web page and while working with UCD experts,  I synthesized 30 UX interviews and analyzed 200 customer discovery survey responses using Python pandas.
+              I built a lightweight web management system for archived medical research project records at FAHZU. Prior to this, I didn't have any experience with API or jQuery - I had only built Flask applications solely based on Python and SQL.
+              <br><br>
+              The biggest challenge I encountered was the Chinese character display issue during the execution of RESTFUL API, databases (selecting and updating data requires different charsets set at the start of database connections), and serializing JSON.
+              <br><br>I wished to avoid the potential consequences of the encoding and decoding hassle, so I wrote a function in connect.py to select the correct charset based on specific SQL demands.
             </p>
-            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
-            <span class="badge badge-pill badge-warning">Python</span>
-            <span class="badge badge-pill badge-info">MS SQL Server</span>
           </div>
         </div>
       </div>
     </section>
     <!---About Me-->
+    <div class="line3"></div>
     <div class="abtme">
       <section id="aboutMe">
         <div class="section-heading">
@@ -162,7 +169,7 @@
               </li><br><br>
               <li class="badminton-line">
                 &nbsp;&nbsp;&nbsp;3. I LOVE 🏸BADMINTON🏸 (EST 2010)
-                <div><img class="bm1" src="bm1.jpg" align="center"></div>
+                <div><img class="bm1" src="../static/pics/bm1.jpg" align="center"></div>
               </li>
             </ul>
           </div>
@@ -174,11 +181,14 @@
     <footer>
       <div class="footer">
         <div class="col-left footer-title">
-          <h6> Made by Yifan (Rhyme) Zhou | Design Inspired by Catherine Yeo</b></h6>
+          <h6>Made by Yifan (Rhyme) Zhou | Designed Inspired by Catherine Yeo</b></h6>
         </div>
       </div>
     </footer>
 
+
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -207,10 +217,11 @@
     <script>
       //MAKE THE HIGHLIGHTER COLOR FLEXIBLE 
       // VARIABLES
+      
       const magicalUnderlines = Array.from(document.querySelectorAll('.underline--magical'));
 
       const gradientAPI = 'https://gist.githubusercontent.com/wking-io/3e116c0e5675c8bcad8b5a6dc6ca5344/raw/4e783ce3ad0bcd98811c6531e40256b8feeb8fc8/gradient.json';
-
+      
       // HELPER FUNCTIONS
 
       // 1. Get random number in range. Used to get random index from array.
@@ -240,7 +251,6 @@
       const addBackgroundToUnderlines = addBackground(magicalUnderlines);
 
       // GRADIENT FUNCTIONS
-
       // 1. Build CSS formatted linear-gradient from API data
       const buildGradient = (obj) => `linear-gradient(${obj.direction}, ${mergeArrays(obj.colors, obj.positions)})`;
 
