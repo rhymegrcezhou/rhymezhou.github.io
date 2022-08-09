@@ -103,7 +103,7 @@
     flex-direction: column;
     display: flex;
     position: fixed;
-    top: 263px;
+    top: 257px;
     right: 15px;
     z-index:2;
   }
