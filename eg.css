@@ -79,7 +79,7 @@ h5 {
 .line2{
   flex: 40%;
   width: 3px;
-  height: 40%;
+  height: 45%;
   position: fixed;
   margin-bottom: 10px;
   top: 0;
@@ -90,7 +90,7 @@ h5 {
 .line3{
   flex: 40%;
   width: 3px;
-  height: 30%;
+  height: 37%;
   position: fixed;
   margin-bottom: 10px;
   bottom: -10px;
