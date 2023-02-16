@@ -174,10 +174,10 @@ h5 {
 
 #me {
   max-width: 40vw;
-  max-height: 40vh;
-  object-fit: cover;
+  max-height: 48vh;
+  object-fit:fill;
   border-radius: 10%;
-  width: 440px;
+  width: 450px;
   height: 400px;
   transition: 0.2s;
 }
