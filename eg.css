@@ -174,11 +174,9 @@ h5 {
 
 #me {
   max-width: 40vw;
-  max-height: 48vh;
+  max-height: 53vh;
   object-fit:fill;
   border-radius: 10%;
-  width: 450px;
-  height: 400px;
   transition: 0.2s;
 }
 #me:hover {
