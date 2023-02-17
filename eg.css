@@ -406,7 +406,7 @@ h5 {
   height: 25px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../pics/arrow_down.svg');
+  background-image: url('arrow_down.svg');
   position: absolute;
   right: 15px;
   top: 50%;
@@ -441,7 +441,7 @@ h5 {
   display: block;
 }
 .faq-container > .faq.active > .faq-icon {
-  background-image: url('../pics/close.svg');
+  background-image: url('close.svg');
 }
 
 
